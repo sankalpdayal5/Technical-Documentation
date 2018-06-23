@@ -1,0 +1,113 @@
+body {
+    margin: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#navbar {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    padding-right: 0px;
+    border-right: 2px rgb(129, 129, 129) solid;
+    overflow-x: hidden;
+    margin-left: 0px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    background-color: white;
+}
+
+#navbar header {
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    background-color: violet;
+    border-bottom: 1px solid darkblue;
+    margin-bottom: 10px;
+    margin-right: 0px;
+    font-size: 25px;
+    position: sticky;
+    top: 0px;
+    box-sizing: border-box;
+}
+
+#navbar ul {
+    margin-top: 0px;
+    margin-left: 0px;
+    padding-left: 15px;
+    padding-right: 10px;
+}
+
+#navbar ul span {
+    display: none;
+}
+
+#navbar li {
+    border-bottom: 1px solid blue;
+    padding: 12px 15px 3px 10px;
+    list-style-type: none;
+    padding-right: 0px;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: black;
+}
+
+#navbar a:hover {
+    color: #ff8b8b;
+}
+
+#main-doc {
+    float: right;
+    margin: 0px 5px;
+    margin-left: 310px;
+    padding: 20px;
+    text-align: justify;
+    box-sizing: border-box;
+}
+
+#main-doc section {
+    border-bottom: 2px solid red;
+    margin-bottom: 40px;
+}
+
+#main-doc section span {
+    display: none;
+}
+
+#main-doc li {
+    padding-bottom: 10px;
+}
+
+.main-section header {
+    font-size: 23px;
+    margin-left: 10px;
+}
+
+code {
+    display: block;
+    text-align: left;
+    position: initial;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #f7f7f7;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width:800px) {
+    #navbar {
+        position: sticky;
+        top: 0;
+        width: 100%;
+        height: 200px;
+        border-bottom: 10px rgba(0, 0, 0, 0.4) solid;
+    }
+    #main-doc {
+        width: 100%;
+        float: none;
+        margin: 0px;
+    }
+}
